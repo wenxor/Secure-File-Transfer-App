@@ -58,7 +58,7 @@ public class ServerMain
         Scanner sc = new Scanner(System.in);
         while (true)
         {
-            System.out.print(" Filtra-Server> ");
+            System.out.print("FTP-Server> ");
             String cmd = sc.nextLine();
             executeProgram(cmd);
         }

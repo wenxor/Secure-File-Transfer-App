@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `block_users`;
 CREATE TABLE `block_users` (
   `id` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +51,7 @@ CREATE TABLE `directories` (
   `name_directory` varchar(45) NOT NULL,
   `created_date` varchar(45) NOT NULL,
   PRIMARY KEY (`id_directory`,`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -79,7 +79,7 @@ CREATE TABLE `files` (
   `upload_date` varchar(45) NOT NULL,
   `filesize` bigint unsigned DEFAULT NULL,
   PRIMARY KEY (`id_file`,`id_user_upload`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,7 +107,7 @@ CREATE TABLE `notifications` (
   `action` varchar(255) NOT NULL,
   `notify_time` varchar(45) NOT NULL,
   PRIMARY KEY (`id_notify`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -134,7 +134,7 @@ CREATE TABLE `permissions` (
   `isRead` tinyint(1) NOT NULL,
   `isWrite` tinyint(1) NOT NULL,
   PRIMARY KEY (`id_permission`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -164,7 +164,7 @@ CREATE TABLE `users` (
   `activated` tinyint NOT NULL,
   `max_size` bigint DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
