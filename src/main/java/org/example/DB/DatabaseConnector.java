@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class DatabaseConnector
 {
     private static final String URL = "jdbc:mysql://localhost:3306/myftpdb";
-    private static final String USERDB = "huflit";
-    private static final String PASSDB = "mysql";
+    private static final String USERDB = "root";
+    private static final String PASSDB = "";
     private static Connection connection;
 
     public static Connection connectToDatabase() throws SQLException

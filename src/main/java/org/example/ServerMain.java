@@ -97,7 +97,7 @@ public class ServerMain
                 showHelp();
                 break;
             default:
-                System.out.println("Wrong command!");
+                System.out.println("\n");
                 break;
         }
     }
